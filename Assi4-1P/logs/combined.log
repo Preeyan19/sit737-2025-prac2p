@@ -1,0 +1,30 @@
+{"level":"info","message":"Received request: GET /add?num1=10&num2=5","service":"calculator-microservice"}
+{"level":"info","message":"Addition: 10 + 5 = 15","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /apple-touch-icon-precomposed.png","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /apple-touch-icon.png","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"Received request: DELETE /add?num1=10&num2=5%0A","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /add?num1=10&num2=5%0A","service":"calculator-microservice"}
+{"level":"info","message":"Addition: 10 + 5 = 15","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /add?num1=10&num2=5","service":"calculator-microservice"}
+{"level":"info","message":"Addition: 10 + 5 = 15","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /","service":"calculator-microservice"}
+{"level":"info","message":"Received request: GET /add?num1=10&num2=5","service":"calculator-microservice"}
+{"level":"info","message":"Addition: 10 + 5 = 15","service":"calculator-microservice"}
+{"level":"info","message":"Calculator microservice running on http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=10&num2=5 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: add, Inputs: 10, 5, Result: 15","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /subtract?num1=1&num2=5 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: subtract, Inputs: 1, 5, Result: -4","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /multiply?num1=19&num2=24 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: multiply, Inputs: 19, 24, Result: 456","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=0&num2=5 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: divide, Inputs: 0, 5, Result: 0","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=5&num2=99 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: divide, Inputs: 5, 99, Result: 0.050505050505050504","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=5&num2=99 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Operation: divide, Inputs: 5, 99, Result: 0.050505050505050504","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=5&num2=0 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Error: Cannot divide by zero","service":"calculator-microservice"}
