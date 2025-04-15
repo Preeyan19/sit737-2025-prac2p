@@ -1,0 +1,10 @@
+{
+  "name": "sit737-node-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for SIT737 Kubernetes deployment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {}
+}
