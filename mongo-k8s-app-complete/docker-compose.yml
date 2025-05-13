@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    container_name: mongo-k8s-app
+    environment:
+      MONGO_USER: root
+      MONGO_PASS: example
+      MONGO_HOST: mongo  # Link to the mongo container
+      MONGO_PORT: 27017
+      MONGO_DB: testdb
+    ports:
+      - "3001:3001"  # Expose app on port 3001
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
