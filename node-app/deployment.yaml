@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+    spec:
+      containers:
+        - name: node-container
+          image: gcr.io/sit737-25t1-shivangeka-1dbaa53/node-app:latest
+          ports:
+            - containerPort: 3000
